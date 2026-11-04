@@ -7,7 +7,6 @@
       "request": "launch",
       "cwd": "${workspaceFolder}/site",
       "command": "npm run dev",
-      "preLaunchTask": "site: install",
       "serverReadyAction": {
         "pattern": "(?:Local\\s+|Dev server (?:already )?running at )http://(?:localhost|127\\.0\\.0\\.1):([0-9]+)",
         "uriFormat": "http://localhost:%s/",
