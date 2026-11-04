@@ -5,11 +5,12 @@
       "name": "Mona Astro: Dev Server",
       "type": "node-terminal",
       "request": "launch",
-      "command": "cd site && npm run dev -- --host 0.0.0.0 --port 4321",
+      "cwd": "${workspaceFolder}/site",
+      "command": "npm run dev",
       "preLaunchTask": "site: install",
       "serverReadyAction": {
-        "pattern": "Local\\s+http://localhost:4321/|Local\\s+http://127\\.0\\.0\\.1:4321/",
-        "uriFormat": "http://localhost:4321/",
+        "pattern": "(?:Local\\s+|Dev server (?:already )?running at )http://(?:localhost|127\\.0\\.0\\.1):([0-9]+)",
+        "uriFormat": "http://localhost:%s/",
         "action": "openExternally"
       }
     }
