@@ -34,8 +34,8 @@ safe-outputs:
 
 # Update GitHub Information for Mona
 
-On each scheduled or manually dispatched run, propose relevant, factual updates
-to `site/content/github-info.md` for Mona to review.
+Create a pull request for Mona to review on each scheduled or manual run when
+relevant, factual updates to `site/content/github-info.md` are needed.
 
 1. Use GitHub repository API tools to read `notes/mona-notes.md` and the current
    `site/content/github-info.md` from this run's repository and ref. Read any
